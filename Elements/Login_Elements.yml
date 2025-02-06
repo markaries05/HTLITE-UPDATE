@@ -1,3 +1,6 @@
 username_field: xpath://input[@id='LoginForm_username']
 password_field: xpath://input[@id='LoginForm_password']
 signIn_button:  xpath://button[@class='btn pull-right btn-primary btn-lg']
+userPass_error: xpath://div[text()='Incorrect username or password.']
+unhide_toggle:  xpath://i[@id='togglePassword']
+reset_btn:  xpath://a[@id='reset_link']

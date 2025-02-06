@@ -1,6 +1,7 @@
-browser1:  headlesschrome
-browser2:  firefox
-url:  https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+browser1: chrome
+browser2: firefox
+browser3: edge
+url:  https://hrlite-dost5.asti.dost.gov.ph/index.php?r=site/login
 short:  5s
 medium: 10s
 long: 15s

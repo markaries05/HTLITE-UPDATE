@@ -1,8 +1,0 @@
-"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"Verify inValid Login","12007","oinValid Login4","","Fri Jan 31 12:55:30 PST 2025","passed","Fri Jan 31 12:55:42 PST 2025","","Login","",""
-"Verify inValid Login","11964","oinValid Login2","","Fri Jan 31 12:55:06 PST 2025","passed","Fri Jan 31 12:55:18 PST 2025","","Login","",""
-"Verify inValid Login","12149","oinValid Login3","","Fri Jan 31 12:55:18 PST 2025","passed","Fri Jan 31 12:55:30 PST 2025","","Login","",""
-"Verify inValid Login","23209","oinValid Login5","","Fri Jan 31 12:55:42 PST 2025","passed","Fri Jan 31 12:56:06 PST 2025","","Login","",""
-"Verify inValid Login","12668","oinValid Login6","","Fri Jan 31 12:56:06 PST 2025","passed","Fri Jan 31 12:56:18 PST 2025","","Login","",""
-"Verify inValid Login","12474","oinValid Login7","","Fri Jan 31 12:56:18 PST 2025","passed","Fri Jan 31 12:56:31 PST 2025","","Login","",""
-"Verify Valid Login","12259","oValid Login1","","Fri Jan 31 12:54:54 PST 2025","passed","Fri Jan 31 12:55:06 PST 2025","","Login","",""

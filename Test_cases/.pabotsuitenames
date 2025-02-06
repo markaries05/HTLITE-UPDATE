@@ -1,5 +1,5 @@
-datasources:2e4b340908712bf6c772875031da0ea05e198fda
-commandlineoptions:430203da2fcfdc806c4f3b976135f3936a1dd983
+datasources:dd8a06e7a90b2dd6168b08568ef5f66855d8255a
+commandlineoptions:a7fd365583ef6431acabe05351c8712bf50f9763
 suitesfrom:no-suites-from-option
-file:9e76a46a43f0e6b110f2a243b954197027807bd2
---suite Login
+file:0ad2c99bf02af0f9666cfbea36c12ac24ca20364
+--suite HRLITE LOGIN

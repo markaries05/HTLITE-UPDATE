@@ -1,65 +1,126 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2 (Python 3.13.1 on win32)" generated="2025-01-31T10:56:33.143265" rpa="false" schemaversion="5">
-<suite id="s1" name="Login" source="c:\project\HRLITE\Test_cases\Login.robot">
-<test id="s1-t1" name="oValid Login1" line="54">
+<robot generator="Robot 7.2 (Python 3.12.8 on win32)" generated="2025-02-06T16:18:03.000854" rpa="false" schemaversion="5">
+<suite id="s1" name="HRLITE HOME" source="c:\project\HRLITE\Test_cases\Home.robot">
+<test id="s1-t1" name="T57327" line="47">
 <kw name="Launch Browser" owner="General_Controller" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-01-31T10:56:33.797899" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<msg time="2025-02-06T16:18:03.560562" level="INFO">Opening browser 'edge' to base url 'https://hrlite-dost5.asti.dost.gov.ph/index.php?r=site/login'.</msg>
 <arg>${url}</arg>
-<arg>${browser1}</arg>
+<arg>${browser3}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-01-31T10:56:33.797538" elapsed="6.562024"/>
+<status status="PASS" start="2025-02-06T16:18:03.560562" elapsed="5.927379"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-01-31T10:56:40.359947" elapsed="0.028586"/>
+<status status="PASS" start="2025-02-06T16:18:09.488940" elapsed="0.041648"/>
 </kw>
 <kw name="Set Browser Implicit Wait" owner="SeleniumLibrary">
 <arg>5s</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" start="2025-01-31T10:56:40.389489" elapsed="0.002550"/>
+<status status="PASS" start="2025-02-06T16:18:09.530588" elapsed="0.002003"/>
 </kw>
-<status status="PASS" start="2025-01-31T10:56:33.796169" elapsed="6.596186"/>
+<status status="PASS" start="2025-02-06T16:18:03.560562" elapsed="5.973031"/>
 </kw>
+<kw name="Login" owner="General_Controller">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>//input[@name='username']</arg>
+<arg>${username_field}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-01-31T10:56:40.393438" elapsed="0.406754"/>
+<status status="PASS" start="2025-02-06T16:18:09.535115" elapsed="0.029866"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-01-31T10:56:40.802027" level="INFO">Typing text 'Admin' into text field '//input[@name='username']'.</msg>
-<arg>//input[@name='username']</arg>
-<arg>Admin</arg>
+<msg time="2025-02-06T16:18:09.565982" level="INFO">Typing text 'aries' into text field 'xpath://input[@id='LoginForm_username']'.</msg>
+<arg>${username_field}</arg>
+<arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-31T10:56:40.801469" elapsed="0.136286"/>
+<status status="PASS" start="2025-02-06T16:18:09.565982" elapsed="0.134836"/>
 </kw>
 <kw name="Input Password" owner="SeleniumLibrary">
-<msg time="2025-01-31T10:56:40.940559" level="INFO">Typing password into text field '//input[@name='password']'.</msg>
-<msg time="2025-01-31T10:56:40.982982" level="INFO">Temporally setting log level to: NONE</msg>
-<arg>//input[@name='password']</arg>
-<arg>admin123</arg>
+<msg time="2025-02-06T16:18:09.700818" level="INFO">Typing password into text field 'xpath://input[@id='LoginForm_password']'.</msg>
+<msg time="2025-02-06T16:18:09.761250" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${password_field}</arg>
+<arg>${password}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-31T10:56:40.940058" elapsed="0.146436"/>
+<status status="PASS" start="2025-02-06T16:18:09.700818" elapsed="0.145169"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-01-31T10:56:41.087617" level="INFO">Clicking button '//button[@type='submit']'.</msg>
-<arg>//button[@type='submit']</arg>
+<msg time="2025-02-06T16:18:09.847006" level="INFO">Clicking button 'xpath://button[@class='btn pull-right btn-primary btn-lg']'.</msg>
+<arg>${signIn_button}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-31T10:56:41.087227" elapsed="1.234372"/>
+<status status="PASS" start="2025-02-06T16:18:09.845987" elapsed="3.426275"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-06T16:18:13.273024" level="INFO">Clicking element 'xpath://input[@id='acceptTerms']'.</msg>
+<arg>${accept_term}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-06T16:18:13.272262" elapsed="0.079704"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-02-06T16:18:13.351966" level="INFO">Clicking button 'xpath://button[@id='continueBtn']'.</msg>
+<arg>${term_continue_btn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-06T16:18:13.351966" elapsed="0.083384"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>//h6[text()='Dashboard']</arg>
+<arg>${dashboard}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-01-31T10:56:42.322534" elapsed="0.444302"/>
+<status status="PASS" start="2025-02-06T16:18:13.435350" elapsed="0.029279"/>
+</kw>
+<status status="PASS" start="2025-02-06T16:18:09.534103" elapsed="3.931949"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-06T16:18:18.469551" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-06T16:18:13.467154" elapsed="5.005209"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-06T16:18:18.472363" level="INFO">Clicking element 'xpath://a//i[@class='fa fa-bars']'.</msg>
+<arg>${nav_bar_btn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-06T16:18:18.472363" elapsed="0.216180"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-02-06T16:18:18.886679" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Test_cases/test_result/nav_bar.png"&gt;&lt;img src="Test_cases/test_result/nav_bar.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-02-06T16:18:18.886679" level="INFO">${screenshot_path1} = C:\project\HRLITE\Test_cases\test_result\nav_bar.png</msg>
+<var>${screenshot_path1}</var>
+<arg>Test_cases/test_result/nav_bar.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-02-06T16:18:18.688543" elapsed="0.198136"/>
+</kw>
+<kw name="Attach File" owner="AllureLibrary">
+<arg>${screenshot_path1}</arg>
+<arg>nav_bar.png</arg>
+<arg>image/png</arg>
+<status status="PASS" start="2025-02-06T16:18:18.889417" elapsed="0.001008"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-06T16:18:19.891324" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-06T16:18:18.890425" elapsed="1.000899"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-02-06T16:18:20.029188" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Test_cases/test_result/nav_ubar.png"&gt;&lt;img src="Test_cases/test_result/nav_ubar.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-02-06T16:18:20.029188" level="INFO">${screenshot_path1} = C:\project\HRLITE\Test_cases\test_result\nav_ubar.png</msg>
+<var>${screenshot_path1}</var>
+<arg>Test_cases/test_result/nav_ubar.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-02-06T16:18:19.891324" elapsed="0.139873"/>
+</kw>
+<kw name="Attach File" owner="AllureLibrary">
+<arg>${screenshot_path1}</arg>
+<arg>nav_ubar.png</arg>
+<arg>image/png</arg>
+<status status="PASS" start="2025-02-06T16:18:20.031197" elapsed="0.000000"/>
 </kw>
 <kw name="Close All Browsers" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" start="2025-01-31T10:56:42.768122" elapsed="3.279111"/>
+<status status="PASS" start="2025-02-06T16:18:20.031197" elapsed="4.414037"/>
 </kw>
-<doc>Verify Valid Login</doc>
-<status status="PASS" start="2025-01-31T10:56:33.795036" elapsed="12.253508"/>
+<doc>**Able to click the navigation bar button**</doc>
+<status status="PASS" start="2025-02-06T16:18:03.560562" elapsed="20.884672"/>
 </test>
-<status status="PASS" start="2025-01-31T10:56:33.167121" elapsed="12.889440"/>
+<status status="PASS" start="2025-02-06T16:18:03.018805" elapsed="21.426429"/>
 </suite>
 <statistics>
 <total>
@@ -68,7 +129,7 @@
 <tag>
 </tag>
 <suite>
-<stat name="Login" id="s1" pass="1" fail="0" skip="0">Login</stat>
+<stat name="HRLITE HOME" id="s1" pass="1" fail="0" skip="0">HRLITE HOME</stat>
 </suite>
 </statistics>
 <errors>

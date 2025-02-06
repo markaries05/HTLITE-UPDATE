@@ -1,2 +1,0 @@
-1738021519665	geckodriver	INFO	Listening on 127.0.0.1:58691
-1738021522665	mozrunner::runner	INFO	Running command: "C:\\Users\\asti\\.cache\\selenium\\firefox\\win64\\134.0.2\\firefox.exe" "--marionette" "--remote-debugging ... 92" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\asti\\AppData\\Local\\Temp\\rust_mozprofile3mgbue"
