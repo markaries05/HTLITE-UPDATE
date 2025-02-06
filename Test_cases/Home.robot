@@ -63,6 +63,6 @@ T57336
     ${screenshot_path1}=    Capture Page Screenshot    Test_cases/test_result/nav_ubar.png
     Attach File    ${screenshot_path1}    nav_ubar.png    image/png
     
-    
+    ss
 
     
