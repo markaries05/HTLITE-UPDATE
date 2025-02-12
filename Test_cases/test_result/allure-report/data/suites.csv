@@ -1,2 +1,2 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"![Test Screenshot](./test1.png)    **Verify that user with valid credentials can login to the website**","18999","T57294","","Thu Feb 06 11:55:15 PST 2025","passed","Thu Feb 06 11:55:34 PST 2025","","HRLITE LOGIN","",""
+"**Verify that user with valid credentials can login to the website**","13281","T57294","","Wed Feb 12 08:56:18 PST 2025","passed","Wed Feb 12 08:56:32 PST 2025","","Login chrome","",""

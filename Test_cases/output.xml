@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Rebot 7.2 (Python 3.12.8 on win32)" generated="2025-02-12T08:53:20.328652" rpa="false" schemaversion="5">
+<suite id="s1" name="Login chrome" source="C:\project\HRLITE\Test_cases\Login_chrome.robot">
+<test id="s1-t1" name="T57294" line="22">
+<kw name="Launch Browser Chrome" owner="General_Controller" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-02-12T08:53:02.217737" level="INFO">Opening browser 'chrome' to base url 'https://hrlite-dost5.asti.dost.gov.ph/index.php?r=site/login'.</msg>
+<arg>${url}</arg>
+<arg>${browser1}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-02-12T08:53:02.217737" elapsed="5.664250"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-02-12T08:53:07.882984" elapsed="1.537847"/>
+</kw>
+<kw name="Set Browser Implicit Wait" owner="SeleniumLibrary">
+<arg>5s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-02-12T08:53:09.420831" elapsed="0.001999"/>
+</kw>
+<status status="PASS" start="2025-02-12T08:53:02.216718" elapsed="7.206112"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${username_field}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-12T08:53:09.422830" elapsed="0.030264"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-12T08:53:09.453094" level="INFO">Typing text 'aries' into text field 'xpath://input[@id='LoginForm_username']'.</msg>
+<arg>${username_field}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-12T08:53:09.453094" elapsed="0.085316"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-02-12T08:53:09.538410" level="INFO">Typing password into text field 'xpath://input[@id='LoginForm_password']'.</msg>
+<msg time="2025-02-12T08:53:09.572554" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${password_field}</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-12T08:53:09.538410" elapsed="0.092661"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-02-12T08:53:09.776173" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Test_cases/test_result/test_screens/chrome/CLog_page.png"&gt;&lt;img src="Test_cases/test_result/test_screens/chrome/CLog_page.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-02-12T08:53:09.776173" level="INFO">${screenshot_path} = C:\project\HRLITE\Test_cases\pabot_results\0\Test_cases\test_result\test_screens\chrome\CLog_page.png</msg>
+<var>${screenshot_path}</var>
+<arg>Test_cases/test_result/test_screens/chrome/CLog_page.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-02-12T08:53:09.632070" elapsed="0.144103"/>
+</kw>
+<kw name="Attach File" owner="AllureLibrary">
+<arg>${screenshot_path}</arg>
+<arg>CLog_page.png</arg>
+<arg>image/png</arg>
+<status status="PASS" start="2025-02-12T08:53:09.776173" elapsed="0.001049"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-02-12T08:53:09.777222" level="INFO">Clicking button 'xpath://button[@class='btn pull-right btn-primary btn-lg']'.</msg>
+<arg>${signIn_button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-12T08:53:09.777222" elapsed="2.426210"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-12T08:53:12.204431" level="INFO">Clicking element 'xpath://input[@id='acceptTerms']'.</msg>
+<arg>${accept_term}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-12T08:53:12.203432" elapsed="0.089316"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-02-12T08:53:12.293776" level="INFO">Clicking button 'xpath://button[@id='continueBtn']'.</msg>
+<arg>${term_continue_btn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-12T08:53:12.292748" elapsed="0.111847"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${dashboard}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-12T08:53:12.404595" elapsed="0.021864"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2025-02-12T08:53:12.426459" elapsed="3.524687"/>
+</kw>
+<doc>**Verify that user with valid credentials can login to the website**</doc>
+<status status="PASS" start="2025-02-12T08:53:02.215733" elapsed="13.735413"/>
+</test>
+<doc>[https://pabot.org/?ref=log|Pabot] result from 1 executions.</doc>
+<status status="PASS" start="2025-02-12T08:53:01.604000" elapsed="13.736000"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Login chrome" id="s1" pass="1" fail="0" skip="0">Login chrome</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

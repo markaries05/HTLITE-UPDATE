@@ -1,0 +1,16 @@
+1739142982305	geckodriver	INFO	Listening on 127.0.0.1:60197
+1739142985342	mozrunner::runner	INFO	Running command: "C:\\Users\\asti\\.cache\\selenium\\firefox\\win64\\135.0\\firefox.exe" "--marionette" "--remote-debugging-p ... 98" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\asti\\AppData\\Local\\Temp\\rust_mozprofileIW6X9x"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1739142986196	Marionette	INFO	Marionette enabled
+1739142986468	Marionette	INFO	Listening on port 60210
+WebDriver BiDi listening on ws://127.0.0.1:60198
+Read port: 60210
+1739142986537	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:60198/devtools/browser/3f2cd7e9-219c-4f8c-b1d5-6dff49b1b8e3
+JavaScript error: https://hrlite-dost5.asti.dost.gov.ph/index.php?r=site/login, line 1164: TypeError: jQuery(...).popover is not a function
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://hrlite-dost5.asti.dost.gov.ph."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://hrlite-dost5.asti.dost.gov.ph."
+1739142996796	Marionette	INFO	Stopped listening on port 60210
+Dynamically enable window occlusion 1

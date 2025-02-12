@@ -1,0 +1,56 @@
+pipeline {
+    agent any
+    stages {
+        stage('commit'){
+             steps{
+                echo 'hello world3'
+            }
+               
+        }
+        stage('test'){
+           
+            steps {
+                bat 'C:\\project\\HRLITE\\run.bat'
+            }        
+
+            post {
+               
+                    always{
+                          
+                            dir('C:\\project\\HRLITE'){
+
+                                allure([
+                                        includeProperties : false,
+                                        jdk: '',
+                                        properties: [],
+                                        reportBuildPolicy: 'ALWAYS',
+                                        results: [[path:'Test_cases/test_result/allure-results']]
+                                        ])
+                            }
+                            
+                    }
+                   
+            }
+            
+        }
+        stage('check test status'){
+            steps{
+              script {
+                    // Mark build as unstable if the previous stage fails
+                    if (currentBuild.result == 'UNSTABLE') {
+                        error 'Stopping the pipeline because the build is unstable.'
+                    }
+                }
+         
+            }
+        }   
+       
+        
+        stage('deploy'){
+            steps{
+                echo 'hello world3'
+            }
+        }
+    }
+    
+}

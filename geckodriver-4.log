@@ -1,0 +1,19 @@
+1739108819513	geckodriver	INFO	Listening on 127.0.0.1:52476
+1739108822549	mozrunner::runner	INFO	Running command: "C:\\Users\\asti\\.cache\\selenium\\firefox\\win64\\135.0\\firefox.exe" "--marionette" "--remote-debugging-p ... 77" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\asti\\AppData\\Local\\Temp\\rust_mozprofileICEMLT"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1739108823401	Marionette	INFO	Marionette enabled
+1739108823717	Marionette	INFO	Listening on port 52487
+WebDriver BiDi listening on ws://127.0.0.1:52477
+Read port: 52487
+1739108823914	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:52477/devtools/browser/d44849be-1fa0-4e9d-9410-cb8ee77223c1
+JavaScript error: https://hrlite-dost5.asti.dost.gov.ph/index.php?r=site/login, line 1164: TypeError: jQuery(...).popover is not a function
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://hrlite-dost5.asti.dost.gov.ph."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://hrlite-dost5.asti.dost.gov.ph."
+1739108838414	Marionette	INFO	Stopped listening on port 52487
+JavaScript warning: https://hrlite-dost5.asti.dost.gov.ph/home/assets/js/plugins/pace/pace.min.js, line 2: Script terminated by timeout at:
+c@https://hrlite-dost5.asti.dost.gov.ph/home/assets/js/plugins/pace/pace.min.js:2:1274
+
+Dynamically enable window occlusion 1

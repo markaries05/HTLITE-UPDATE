@@ -1,126 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2 (Python 3.12.8 on win32)" generated="2025-02-06T16:18:03.000854" rpa="false" schemaversion="5">
-<suite id="s1" name="HRLITE HOME" source="c:\project\HRLITE\Test_cases\Home.robot">
-<test id="s1-t1" name="T57327" line="47">
-<kw name="Launch Browser" owner="General_Controller" type="SETUP">
+<robot generator="Robot 7.2 (Python 3.12.8 on win32)" generated="2025-02-12T08:35:06.786969" rpa="false" schemaversion="5">
+<suite id="s1" name="HRLITE LOGIN CHROME" source="c:\project\HRLITE\Test_cases\Login_chrome.robot">
+<test id="s1-t1" name="T57294" line="23">
+<kw name="Launch Browser Chrome" owner="General_Controller" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-02-06T16:18:03.560562" level="INFO">Opening browser 'edge' to base url 'https://hrlite-dost5.asti.dost.gov.ph/index.php?r=site/login'.</msg>
+<msg time="2025-02-12T08:35:08.040601" level="INFO">Opening browser 'chrome' to base url 'https://hrlite-dost5.asti.dost.gov.ph/index.php?r=site/login'.</msg>
 <arg>${url}</arg>
-<arg>${browser3}</arg>
+<arg>${browser1}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-02-06T16:18:03.560562" elapsed="5.927379"/>
+<status status="PASS" start="2025-02-12T08:35:08.040601" elapsed="11.469390"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-02-06T16:18:09.488940" elapsed="0.041648"/>
+<status status="PASS" start="2025-02-12T08:35:19.510989" elapsed="0.042516"/>
 </kw>
 <kw name="Set Browser Implicit Wait" owner="SeleniumLibrary">
 <arg>5s</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" start="2025-02-06T16:18:09.530588" elapsed="0.002003"/>
+<status status="PASS" start="2025-02-12T08:35:19.554505" elapsed="0.000999"/>
 </kw>
-<status status="PASS" start="2025-02-06T16:18:03.560562" elapsed="5.973031"/>
+<status status="PASS" start="2025-02-12T08:35:08.040601" elapsed="11.514903"/>
 </kw>
-<kw name="Login" owner="General_Controller">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${username_field}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-02-06T16:18:09.535115" elapsed="0.029866"/>
+<status status="PASS" start="2025-02-12T08:35:19.556505" elapsed="0.049467"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-06T16:18:09.565982" level="INFO">Typing text 'aries' into text field 'xpath://input[@id='LoginForm_username']'.</msg>
+<msg time="2025-02-12T08:35:19.606977" level="INFO">Typing text 'aries' into text field 'xpath://input[@id='LoginForm_username']'.</msg>
 <arg>${username_field}</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-06T16:18:09.565982" elapsed="0.134836"/>
+<status status="PASS" start="2025-02-12T08:35:19.606977" elapsed="0.126517"/>
 </kw>
 <kw name="Input Password" owner="SeleniumLibrary">
-<msg time="2025-02-06T16:18:09.700818" level="INFO">Typing password into text field 'xpath://input[@id='LoginForm_password']'.</msg>
-<msg time="2025-02-06T16:18:09.761250" level="INFO">Temporally setting log level to: NONE</msg>
+<msg time="2025-02-12T08:35:19.734872" level="INFO">Typing password into text field 'xpath://input[@id='LoginForm_password']'.</msg>
+<msg time="2025-02-12T08:35:19.783656" level="INFO">Temporally setting log level to: NONE</msg>
 <arg>${password_field}</arg>
 <arg>${password}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-06T16:18:09.700818" elapsed="0.145169"/>
+<status status="PASS" start="2025-02-12T08:35:19.734221" elapsed="0.130127"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-02-12T08:35:20.122351" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Test_cases/test_result/test_screens/chrome/CLog_page.png"&gt;&lt;img src="Test_cases/test_result/test_screens/chrome/CLog_page.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-02-12T08:35:20.122351" level="INFO">${screenshot_path} = C:\project\HRLITE\Test_cases\test_result\test_screens\chrome\CLog_page.png</msg>
+<var>${screenshot_path}</var>
+<arg>Test_cases/test_result/test_screens/chrome/CLog_page.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-02-12T08:35:19.865185" elapsed="0.258147"/>
+</kw>
+<kw name="Attach File" owner="AllureLibrary">
+<arg>${screenshot_path}</arg>
+<arg>CLog_page.png</arg>
+<arg>image/png</arg>
+<status status="PASS" start="2025-02-12T08:35:20.124268" elapsed="0.003001"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-02-06T16:18:09.847006" level="INFO">Clicking button 'xpath://button[@class='btn pull-right btn-primary btn-lg']'.</msg>
+<msg time="2025-02-12T08:35:20.133814" level="INFO">Clicking button 'xpath://button[@class='btn pull-right btn-primary btn-lg']'.</msg>
 <arg>${signIn_button}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-06T16:18:09.845987" elapsed="3.426275"/>
+<status status="PASS" start="2025-02-12T08:35:20.129272" elapsed="2.381755"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-06T16:18:13.273024" level="INFO">Clicking element 'xpath://input[@id='acceptTerms']'.</msg>
+<msg time="2025-02-12T08:35:22.513039" level="INFO">Clicking element 'xpath://input[@id='acceptTerms']'.</msg>
 <arg>${accept_term}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-06T16:18:13.272262" elapsed="0.079704"/>
+<status status="PASS" start="2025-02-12T08:35:22.511027" elapsed="0.137537"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-02-06T16:18:13.351966" level="INFO">Clicking button 'xpath://button[@id='continueBtn']'.</msg>
+<msg time="2025-02-12T08:35:22.648564" level="INFO">Clicking button 'xpath://button[@id='continueBtn']'.</msg>
 <arg>${term_continue_btn}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-06T16:18:13.351966" elapsed="0.083384"/>
+<status status="PASS" start="2025-02-12T08:35:22.648564" elapsed="0.197742"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${dashboard}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-02-06T16:18:13.435350" elapsed="0.029279"/>
-</kw>
-<status status="PASS" start="2025-02-06T16:18:09.534103" elapsed="3.931949"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-06T16:18:18.469551" level="INFO">Slept 5 seconds.</msg>
-<arg>5s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-06T16:18:13.467154" elapsed="5.005209"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-06T16:18:18.472363" level="INFO">Clicking element 'xpath://a//i[@class='fa fa-bars']'.</msg>
-<arg>${nav_bar_btn}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-06T16:18:18.472363" elapsed="0.216180"/>
-</kw>
-<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2025-02-06T16:18:18.886679" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Test_cases/test_result/nav_bar.png"&gt;&lt;img src="Test_cases/test_result/nav_bar.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2025-02-06T16:18:18.886679" level="INFO">${screenshot_path1} = C:\project\HRLITE\Test_cases\test_result\nav_bar.png</msg>
-<var>${screenshot_path1}</var>
-<arg>Test_cases/test_result/nav_bar.png</arg>
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2025-02-06T16:18:18.688543" elapsed="0.198136"/>
-</kw>
-<kw name="Attach File" owner="AllureLibrary">
-<arg>${screenshot_path1}</arg>
-<arg>nav_bar.png</arg>
-<arg>image/png</arg>
-<status status="PASS" start="2025-02-06T16:18:18.889417" elapsed="0.001008"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-06T16:18:19.891324" level="INFO">Slept 1 second.</msg>
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-06T16:18:18.890425" elapsed="1.000899"/>
-</kw>
-<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2025-02-06T16:18:20.029188" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Test_cases/test_result/nav_ubar.png"&gt;&lt;img src="Test_cases/test_result/nav_ubar.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2025-02-06T16:18:20.029188" level="INFO">${screenshot_path1} = C:\project\HRLITE\Test_cases\test_result\nav_ubar.png</msg>
-<var>${screenshot_path1}</var>
-<arg>Test_cases/test_result/nav_ubar.png</arg>
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2025-02-06T16:18:19.891324" elapsed="0.139873"/>
-</kw>
-<kw name="Attach File" owner="AllureLibrary">
-<arg>${screenshot_path1}</arg>
-<arg>nav_ubar.png</arg>
-<arg>image/png</arg>
-<status status="PASS" start="2025-02-06T16:18:20.031197" elapsed="0.000000"/>
+<status status="PASS" start="2025-02-12T08:35:22.846306" elapsed="0.033194"/>
 </kw>
 <kw name="Close All Browsers" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" start="2025-02-06T16:18:20.031197" elapsed="4.414037"/>
+<status status="PASS" start="2025-02-12T08:35:22.882616" elapsed="3.699545"/>
 </kw>
-<doc>**Able to click the navigation bar button**</doc>
-<status status="PASS" start="2025-02-06T16:18:03.560562" elapsed="20.884672"/>
+<doc>**Verify that user with valid credentials can login to the website**</doc>
+<status status="PASS" start="2025-02-12T08:35:08.040601" elapsed="18.541560"/>
 </test>
-<status status="PASS" start="2025-02-06T16:18:03.018805" elapsed="21.426429"/>
+<status status="PASS" start="2025-02-12T08:35:06.818170" elapsed="19.763991"/>
 </suite>
 <statistics>
 <total>
@@ -129,7 +94,7 @@
 <tag>
 </tag>
 <suite>
-<stat name="HRLITE HOME" id="s1" pass="1" fail="0" skip="0">HRLITE HOME</stat>
+<stat name="HRLITE LOGIN CHROME" id="s1" pass="1" fail="0" skip="0">HRLITE LOGIN CHROME</stat>
 </suite>
 </statistics>
 <errors>

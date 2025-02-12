@@ -1,5 +1,5 @@
-datasources:dd8a06e7a90b2dd6168b08568ef5f66855d8255a
+datasources:0eea47254c5913c8de0c1770e5a20380d850e000
 commandlineoptions:a7fd365583ef6431acabe05351c8712bf50f9763
 suitesfrom:no-suites-from-option
-file:0ad2c99bf02af0f9666cfbea36c12ac24ca20364
---suite HRLITE LOGIN
+file:f9ec7553ef7f121197daa497ced7a1e154b0396b
+--suite Login chrome

@@ -1,1 +1,1 @@
-[{"name":"Jenkins","type":"jenkins","url":"http://3.26.201.4:8080/","buildOrder":128,"buildName":"HRLITE #128","buildUrl":"http://3.26.201.4:8080/job/HRLITE/128/","reportName":"AllureReport","reportUrl":"http://3.26.201.4:8080/job/HRLITE/128/allure"}]
+[{"name":"Jenkins","type":"jenkins","url":"http://3.1.81.163:8080/","buildOrder":10,"buildName":"HRLITE #10","buildUrl":"http://3.1.81.163:8080/job/HRLITE/10/","reportName":"AllureReport","reportUrl":"http://3.1.81.163:8080/job/HRLITE/10/allure"}]
