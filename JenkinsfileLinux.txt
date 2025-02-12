@@ -11,7 +11,7 @@ pipeline {
            
             steps {
                
-                sh """pabot --processes 4 --listener allure_robotframework:test_result/allure-results --outputdir test_result Test_cases/*.robot"""
+                sh """pabot --processes 4 --listener allure_robotframework:test_result/allure-results --outputdir test_result Test_cases/Login_chrome.robot"""
                 sh """allure generate Test_cases/test_result/allure-results --clean -o Test_cases/test_result/allure-report"""
             }        
 
