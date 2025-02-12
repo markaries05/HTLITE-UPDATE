@@ -1,5 +1,5 @@
 *** Settings ***
-Name    HRLITE LOGIN CHROME
+
 Library        SeleniumLibrary
 Library        OperatingSystem
 Library    AllureLibrary
