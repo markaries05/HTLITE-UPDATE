@@ -15,23 +15,7 @@ pipeline {
                 sh """allure generate Test_cases/test_result/allure-results --clean -o Test_cases/test_result/allure-report"""
             }        
 
-            post {
-               
-                    always{
-                          
-                            
-                                allure([
-                                        includeProperties : false,
-                                        jdk: '',
-                                        properties: [],
-                                        reportBuildPolicy: 'ALWAYS',
-                                        results: [[path:'test_result/allure-results']]
-                                        ])
-                            
-                            
-                    }
-                   
-            }
+            
             
         }
         stage('check test status'){
