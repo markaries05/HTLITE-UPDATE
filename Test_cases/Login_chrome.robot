@@ -25,8 +25,8 @@ T57294
     Wait Until Element Is Visible        ${username_field}
     Input Text                           ${username_field}    ${username}
     Input Password                       ${password_field}    ${password}
-    ${screenshot_path}=                  Capture Page Screenshot    Test_cases/test_result/test_screens/chrome/CLog_page.png
-    Attach File                          ${screenshot_path}    CLog_page.png    image/png
+#   ${screenshot_path}=                  Capture Page Screenshot    Test_cases/test_result/test_screens/chrome/CLog_page.png
+#   Attach File                          ${screenshot_path}    CLog_page.png    image/png
     Click Button                         ${signIn_button}
     Click Element                        ${accept_term}
     Click Button                         ${term_continue_btn}    
