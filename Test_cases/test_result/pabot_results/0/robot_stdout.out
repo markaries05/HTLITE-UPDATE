@@ -1,0 +1,38 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.HRLITE HOME CHROME                                                     
+==============================================================================
+T57324 :: **Able to view the Featured Employee**                      | FAIL |
+Setup failed:
+NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+------------------------------------------------------------------------------
+T57325 :: **Able to view the Announcement and Events**                | FAIL |
+Setup failed:
+Execution terminated by signal
+------------------------------------------------------------------------------
+T57326 :: **Able to hide Announcement and Events using the drop-do... | FAIL |
+Test execution stopped due to a fatal error.
+------------------------------------------------------------------------------
+T57327 :: **Able to click the navigation bar button**                 | FAIL |
+Test execution stopped due to a fatal error.
+------------------------------------------------------------------------------
+T57336 :: **Able to hide 'My Leave Credits' using the drop-down bu... | FAIL |
+Test execution stopped due to a fatal error.
+------------------------------------------------------------------------------
+T57337 :: **Able to view the 'My Leave Credits' dashboard**           | FAIL |
+Test execution stopped due to a fatal error.
+------------------------------------------------------------------------------
+T57353 :: **Able to view 'My Pending Applications' tab**              | FAIL |
+Test execution stopped due to a fatal error.
+------------------------------------------------------------------------------
+T57354 :: **Able to hide 'My Pending Application' dashboard**         | FAIL |
+Test execution stopped due to a fatal error.
+------------------------------------------------------------------------------
+Suites.HRLITE HOME CHROME                                             | FAIL |
+8 tests, 0 passed, 8 failed
+==============================================================================
+Suites                                                                | FAIL |
+8 tests, 0 passed, 8 failed
+==============================================================================
+Output:  C:\project\HRLITE\Test_cases\test_result\pabot_results\0\output.xml

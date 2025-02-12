@@ -1,0 +1,19 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.HRLITE LOGIN CHROME                                                    
+==============================================================================
+T57294 :: **Verify that user with valid credentials can login to t... | FAIL |
+Setup failed:
+NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+------------------------------------------------------------------------------
+s                                                                     | FAIL |
+Test cannot be empty.
+------------------------------------------------------------------------------
+Suites.HRLITE LOGIN CHROME                                            | FAIL |
+2 tests, 0 passed, 2 failed
+==============================================================================
+Suites                                                                | FAIL |
+2 tests, 0 passed, 2 failed
+==============================================================================
+Output:  C:\project\HRLITE\Test_cases\test_result\pabot_results\3\output.xml

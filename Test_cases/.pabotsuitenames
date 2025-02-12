@@ -1,5 +1,10 @@
-datasources:0eea47254c5913c8de0c1770e5a20380d850e000
-commandlineoptions:a7fd365583ef6431acabe05351c8712bf50f9763
+datasources:0c6c70e5afa54600731f4abc45e4552c39dc76e0
+commandlineoptions:b8c0c393b3c2c238ae5e986a9035a2cc663906df
 suitesfrom:no-suites-from-option
-file:f9ec7553ef7f121197daa497ced7a1e154b0396b
---suite Login chrome
+file:4666072cf42b14ea15a8a5bc7c406da2aef4fbdc
+--suite Suites.HRLITE HOME CHROME
+--suite Suites.HRLITE HOME EDGE
+--suite Suites.HRLITE HOME FIREFOX
+--suite Suites.HRLITE LOGIN CHROME
+--suite Suites.HRLITE LOGIN EDGE
+--suite Suites.HRLITE LOGIN FIREFOX
