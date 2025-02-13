@@ -14,11 +14,11 @@ Variables    ../Elements/Menu_Elements.yml
 Launch Browser Chrome
     Open Browser                         ${url}    ${browser1}
     Maximize Browser Window
-    Set Browser Implicit Wait    5s
+    Set Browser Implicit Wait    10s
 Launch Browser Firefox
     Open Browser                         ${url}    ${browser2}
     Maximize Browser Window
-    Set Browser Implicit Wait    5s
+    Set Browser Implicit Wait    10s
 Launch Browser Edge
     Open Browser                         ${url}    ${browser3}
 
