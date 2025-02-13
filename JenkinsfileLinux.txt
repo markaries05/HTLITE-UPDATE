@@ -9,6 +9,7 @@ pipeline {
         }
         stage('test'){
            
+           
             steps {
                
                 sh """pabot --processes 3 --listener allure_robotframework:allure-results --outputdir test_result Test_cases/*.robot"""
