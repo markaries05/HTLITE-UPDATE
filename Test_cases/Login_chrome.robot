@@ -31,7 +31,6 @@ T57294
     Click Element                        ${accept_term}
     Click Button                         ${term_continue_btn}    
     Wait Until Element Is Visible        ${dashboard}
-    Log    test
 
 T57296
     [Documentation]    **Verify that user with invalid credentials cannot login to the website**
