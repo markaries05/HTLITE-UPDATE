@@ -23,7 +23,7 @@ Launch Browser Edge
     Open Browser                         ${url}    ${browser3}
 
     Maximize Browser Window
-    Set Browser Implicit Wait    5s
+    Set Browser Implicit Wait    10s
 
 Login
     Wait Until Element Is Visible        ${username_field}
