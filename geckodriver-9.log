@@ -1,15 +1,16 @@
-1739245096250	geckodriver	INFO	Listening on 127.0.0.1:53101
-1739245099291	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "53102" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\asti\\AppData\\Local\\Temp\\rust_mozprofilehtcRMs"
+1739514418029	geckodriver	INFO	Listening on 127.0.0.1:52404
+1739514421010	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52405" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\asti\\AppData\\Local\\Temp\\rust_mozprofileT5eurx"
 console.warn: services.settings: Ignoring preference override of remote settings server
 console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
 Dynamically enable window occlusion 0
-1739245100541	Marionette	INFO	Marionette enabled
-1739245100922	Marionette	INFO	Listening on port 53123
-WebDriver BiDi listening on ws://127.0.0.1:53102
-Read port: 53123
-1739245101011	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-DevTools listening on ws://127.0.0.1:53102/devtools/browser/8dba2f14-7051-4d52-a60e-4b96958c9f48
-1739245125914	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
-1739245126136	Marionette	INFO	Stopped listening on port 53123
+1739514421804	Marionette	INFO	Marionette enabled
+1739514422091	Marionette	INFO	Listening on port 52418
+WebDriver BiDi listening on ws://127.0.0.1:52405
+Read port: 52418
+1739514422251	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:52405/devtools/browser/75794e6e-b6df-4fcd-b2cb-18cb5f232ea7
+JavaScript error: https://hrlite-dost5.asti.dost.gov.ph/index.php?r=site/login, line 1164: TypeError: jQuery(...).popover is not a function
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://hrlite-dost5.asti.dost.gov.ph."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://hrlite-dost5.asti.dost.gov.ph."
+1739514434203	Marionette	INFO	Stopped listening on port 52418
 Dynamically enable window occlusion 1
-!!! error running onStopped callback: TypeError: callback is not a function

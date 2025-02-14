@@ -1,19 +1,16 @@
-1739142942798	geckodriver	INFO	Listening on 127.0.0.1:60102
-1739142945955	mozrunner::runner	INFO	Running command: "C:\\Users\\asti\\.cache\\selenium\\firefox\\win64\\135.0\\firefox.exe" "--marionette" "--remote-debugging-p ... 03" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\asti\\AppData\\Local\\Temp\\rust_mozprofilee9nZPS"
+1739514345336	geckodriver	INFO	Listening on 127.0.0.1:52209
+1739514348261	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52210" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\asti\\AppData\\Local\\Temp\\rust_mozprofile9v5Dal"
 console.warn: services.settings: Ignoring preference override of remote settings server
 console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
 Dynamically enable window occlusion 0
-1739142947569	Marionette	INFO	Marionette enabled
-1739142947938	Marionette	INFO	Listening on port 60121
-WebDriver BiDi listening on ws://127.0.0.1:60103
-Read port: 60121
-1739142948088	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-DevTools listening on ws://127.0.0.1:60103/devtools/browser/09ef4cf4-8ea8-47d3-a172-0067df581d1b
+1739514349030	Marionette	INFO	Marionette enabled
+1739514349311	Marionette	INFO	Listening on port 52223
+WebDriver BiDi listening on ws://127.0.0.1:52210
+Read port: 52223
+1739514349475	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:52210/devtools/browser/0e7e048a-9e6b-4c8b-a8ed-9f7daf55150d
 JavaScript error: https://hrlite-dost5.asti.dost.gov.ph/index.php?r=site/login, line 1164: TypeError: jQuery(...).popover is not a function
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://hrlite-dost5.asti.dost.gov.ph."
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://hrlite-dost5.asti.dost.gov.ph."
-1739142957189	Marionette	INFO	Stopped listening on port 60121
-JavaScript warning: https://hrlite-dost5.asti.dost.gov.ph/home/assets/js/plugins/pace/pace.min.js, line 2: Script terminated by timeout at:
-c@https://hrlite-dost5.asti.dost.gov.ph/home/assets/js/plugins/pace/pace.min.js:2:1274
-
+1739514357672	Marionette	INFO	Stopped listening on port 52223
 Dynamically enable window occlusion 1

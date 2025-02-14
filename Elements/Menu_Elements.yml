@@ -11,3 +11,6 @@ my_pending_app_dropdown: xpath://div[2][@class='col-md-4']/div[1]/div[1]/div[@cl
 settings_dropdown: xpath://span[@class='text-muted text-xs block']
 settings_dd_menu: xpath://ul[@class='dropdown-menu animated fadeInRight m-t-xs']
 settings_digitized_sig: xpath://a[@href='/index.php?r=pmis/er/imageSignature']
+scroll_down:  xpath://a[@href='https://www.gov.ph/']
+leave_credit_mhover:  xpath://div[1][@class='col-md-4']//*[local-name() = 'path' and @fill='#8bbc21']
+pending_leave_app:  xpath://div[2][@class='col-md-4']//*[local-name() = 'path' and @fill='#2caffe']

@@ -19,70 +19,75 @@ Test Teardown    Close All Browsers
 ${screenshot_path}
 *** Test Cases ***
 
-
 T57324
     [Documentation]    **Able to view the Featured Employee**
     Login
-    Wait Until Element Is Visible        ${featured_emp}
-   ${screenshot_path1}=                  Capture Page Screenshot    Test_cases/test_result/test_screens/firefox/Ffeature_employee.png
-    Attach File                          ${screenshot_path1}    Ffeature_employee.png    image/png
+    Wait Until Element Is Visible        ${featured_emp}    timeout=10
+   ${screenshot_path}=                  Capture Page Screenshot    Test_cases/test_result/test_screens/firefox/Ffeature_employee.png
+    Attach File                          ${screenshot_path}    Ffeature_employee.png    image/png
 T57325
     [Documentation]    **Able to view the Announcement and Events**
     Login
-    Wait Until Element Is Visible        ${announcement}
-    ${screenshot_path1}=                 Capture Page Screenshot    Test_cases/test_result/test_screens/firefox/Fannouncement.png
-    Attach File                          ${screenshot_path1}    Fannouncement.png    image/png
+    Wait Until Element Is Visible        ${announcement}    timeout=10
+    ${screenshot_path}=                 Capture Page Screenshot    Test_cases/test_result/test_screens/firefox/Fannouncement.png
+    Attach File                          ${screenshot_path}    Fannouncement.png    image/png
 T57326
     [Documentation]    **Able to hide Announcement and Events using the drop-down button**
     [Tags]    Unfinish
     Login
-    Wait Until Element Is Visible        ${announcement}
+    Wait Until Element Is Visible        ${announcement}    timeout=10
     Click Element                        ${announcement_dropdown}
-    ${screenshot_path1}=                 Capture Page Screenshot    Test_cases/test_result/test_screens/firefox/Fannouncement_bhide.png
-    Attach File                          ${screenshot_path1}    Fannouncement_bhide.png    image/png
+    ${screenshot_path}=                 Capture Page Screenshot    Test_cases/test_result/test_screens/firefox/Fannouncement_bhide.png
+    Attach File                          ${screenshot_path}    Fannouncement_bhide.png    image/png
     Sleep    1s
-    ${screenshot_path1}=                 Capture Page Screenshot    Test_cases/test_result/test_screens/firefox/Fannouncement_hide.png
-    Attach File                          ${screenshot_path1}    Fannouncement_hide.png    image/png
+    ${screenshot_path}=                 Capture Page Screenshot    Test_cases/test_result/test_screens/firefox/Fannouncement_hide.png
+    Attach File                          ${screenshot_path}    Fannouncement_hide.png    image/png
     
 T57327
     [Documentation]    **Able to click the navigation bar button**
     Login
-    ${screenshot_path1}=                Capture Page Screenshot    Test_cases/test_result/test_screens/firefox/Fnav_bar.png
-    Attach File                         ${screenshot_path1}    Fnav_bar.png    image/png
+    ${screenshot_path}=                Capture Page Screenshot    Test_cases/test_result/test_screens/firefox/Fnav_bar.png
+    Attach File                         ${screenshot_path}    Fnav_bar.png    image/png
+    Wait Until Element Is Visible       ${nav_bar_btn}    timeout=10
     Click Element                       ${nav_bar_btn}
     Sleep    1s
-    ${screenshot_path1}=                Capture Page Screenshot    Test_cases/test_result/test_screens/firefox/Fnav_ubar.png
-    Attach File                         ${screenshot_path1}    Fnav_ubar.png    image/png
+    ${screenshot_path}=                Capture Page Screenshot    Test_cases/test_result/test_screens/firefox/Fnav_ubar.png
+    Attach File                         ${screenshot_path}    Fnav_ubar.png    image/png
 T57336
     [Documentation]    **Able to hide 'My Leave Credits' using the drop-down button**
     Login
+    Execute Javascript                  window.scroll(0,1000)        
     Sleep    1s
-    ${screenshot_path1}=                Capture Page Screenshot    Test_cases/test_result/test_screens/firefox/Fbleave_cred.png
-    Attach File                         ${screenshot_path1}    Fbleave_cred.png    image/png
+    ${screenshot_path}=                Capture Page Screenshot    Test_cases/test_result/test_screens/firefox/Fbleave_cred.png
+    Attach File                         ${screenshot_path}    Fbleave_cred.png    image/png
+    Wait Until Element Is Visible       ${my_leave_cred_dropdown}    timeout=10
     Click Element                       ${my_leave_cred_dropdown}
     Sleep    1s
-    ${screenshot_path1}=                Capture Page Screenshot    Test_cases/test_result/test_screens/firefox/Fleave_cred.png
-    Attach File                         ${screenshot_path1}    Fleave_cred.png    image/png
+    ${screenshot_path}=                Capture Page Screenshot    Test_cases/test_result/test_screens/firefox/Fleave_cred.png
+    Attach File                         ${screenshot_path}    Fleave_cred.png    image/png
 T57337
     [Documentation]    **Able to view the 'My Leave Credits' dashboard**
     Login
-    Mouse Over                          xpath://div[1][@class='col-md-4']//*[local-name() = 'path' and @fill='#8bbc21']
+    Execute Javascript                  window.scroll(0,1000)
+    Mouse Over                          ${leave_credit_mhover}
     Sleep    1s
-    ${screenshot_path1}=                Capture Page Screenshot    Test_cases/test_result/test_screens/firefox/Fleave_hover.png
-    Attach File                         ${screenshot_path1}    Fleave_hover.png    image/png
+    ${screenshot_path}=                Capture Page Screenshot    Test_cases/test_result/test_screens/firefox/Fleave_hover.png
+    Attach File                         ${screenshot_path}    Fleave_hover.png    image/png
 T57353
     [Documentation]    **Able to view 'My Pending Applications' tab**
     Login
-    Mouse Over                          xpath://div[2][@class='col-md-4']//*[local-name() = 'path' and @fill='#2caffe']
+    Wait Until Element Is Visible       ${pending_leave_app}
+    Mouse Over                          ${pending_leave_app}                         
     Sleep    1s
-    ${screenshot_path1}=                Capture Page Screenshot    Test_cases/test_result/test_screens/firefox/Fpending_hover.png
-    Attach File                         ${screenshot_path1}    Fending_hover.png    image/png
+    ${screenshot_path}=                Capture Page Screenshot    Test_cases/test_result/test_screens/firefox/Fpending_hover.png
+    Attach File                         ${screenshot_path}    Fpending_hover.png    image/png
 T57354
     [Documentation]    **Able to hide 'My Pending Application' dashboard** 
     Login
+    Wait Until Element Is Visible       ${my_pending_app_dropdown}
     Click Element                       ${my_pending_app_dropdown}
-    ${screenshot_path1}=                Capture Page Screenshot    Test_cases/test_result/test_screens/firefox/Fpending_app_dd.png
-    Attach File                         ${screenshot_path1}    Fpending_app_dd.png    image/png
+    ${screenshot_path}=                Capture Page Screenshot    Test_cases/test_result/test_screens/firefox/Fpending_app_dd.png
+    Attach File                         ${screenshot_path}    Fpending_app_dd.png    image/png
     Sleep    1s
-    ${screenshot_path1}=                Capture Page Screenshot    Test_cases/test_result/test_screens/firefox/Fhpending_app_dd.png
-    Attach File                         ${screenshot_path1}    Fhpending_app_dd.png    image/png
+    ${screenshot_path}=                Capture Page Screenshot    Test_cases/test_result/test_screens/firefox/Fhpending_app_dd.png
+    Attach File                         ${screenshot_path}    Fhpending_app_dd.png    image/png
