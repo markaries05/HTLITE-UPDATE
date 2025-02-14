@@ -1,5 +1,5 @@
 *** Settings ***
-Name    HRLITE HOME FIREFOX
+
 Library        SeleniumLibrary
 Library        OperatingSystem
 Library    AllureLibrary
