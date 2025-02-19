@@ -58,18 +58,18 @@ T57298
     Sleep    1s
 
 
-# T57299
-#     [Documentation]    **Verify that user must be able to reset his password** 
-#     [Tags]    Unfinish
-#     Wait Until Element Is Visible        ${username_field}
-#     Input Text                           ${username_field}    ${username}
-#     Click Element                        ${reset_btn}
-#     Wait Until Element Is Visible        ${reset_pass_mess} 
+T57299
+    [Documentation]    **Verify that user must be able to reset his password** 
+    [Tags]    Unfinish
+    Wait Until Element Is Visible        ${username_field}
+    Input Text                           ${username_field}    ${username}
+    Click Element                        ${reset_btn}
+    Wait Until Element Is Visible        ${reset_pass_mess} 
 
-# T57300
-#     [Documentation]    **Verify that user must not be able to login into the website until required fields are filled in.**
-#     Wait Until Element Is Visible        ${username_field}
-#     Click Button                         ${signIn_button}
-#     Input Text                           ${username_field}    ${username}
-#     Click Button                         ${signIn_button}
+T57300
+    [Documentation]    **Verify that user must not be able to login into the website until required fields are filled in.**
+    Wait Until Element Is Visible        ${username_field}
+    Click Button                         ${signIn_button}
+    Input Text                           ${username_field}    ${username}
+    Click Button                         ${signIn_button}
    
