@@ -42,4 +42,14 @@ Log out
     Click Image                          ${logout_button}
 
 
-    
+
+Set TestRail Property
+    [Arguments]    ${key}    ${value}
+    Set Test Documentation    ${\n}- ${key}: ${value}    append=True
+Take Screenshot And Report
+    ${path} =    Capture Page Screenshot    filename=failure-{index}.png
+    Set TestRail Property    testrail_attachment    ${path}
+
+Close Test Browser
+    Run Keyword If    '${TEST_STATUS}' != 'PASS'    Take Screenshot And Report
+    Close Browser
