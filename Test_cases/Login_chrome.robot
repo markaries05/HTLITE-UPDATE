@@ -68,7 +68,7 @@ T57299
 
 T57300
     [Documentation]    **Verify that user must not be able to login into the website until required fields are filled in.**
-    Wait Until Element Is Visible        ${username_field}
+    Wait Until Element Is Visible        ${usernasme_field}
     Click Button                         ${signIn_button}
     Input Text                           ${username_field}    ${username}
     Click Button                         ${signIn_button}
