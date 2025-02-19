@@ -1,0 +1,35 @@
+pipeline {
+    agent {label 'windows'}
+    stages {
+        stage('commit'){
+             steps{
+                echo 'hello world3'
+            }
+               
+        }
+        stage('test'){
+            steps {
+                
+                script {
+                    // Run a batch file
+                   sh """pabot --processes 4 -d reports "/Test_cases/Login_chrome.robot" 
+                   """
+                }
+            }
+            post {
+                always {
+                    
+                    // junit '**/reports/junit-report.xml'
+                    // archiveArtifacts 'reports/*'
+                    sh """trcli -y -c "trcli-config.yml" parse_robot -f "reports/output.xml"
+                          """
+                    
+                }
+            }
+               
+        }
+    
+     
+    }
+    
+}
