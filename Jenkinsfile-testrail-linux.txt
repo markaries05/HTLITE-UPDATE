@@ -1,0 +1,52 @@
+pipeline {
+    agent {label 'windows'}
+    stages {
+        stage('commit'){
+             steps{
+                echo 'hello world4'
+            }
+               
+        }
+        stage('test'){
+            steps {
+                
+                script {
+                    // Run a batch file
+                   sh """pabot --processes 4 -d reports Test_cases/Login_chrome.robot"""
+                }
+            }
+            post {
+                always {
+                    
+                    // junit '**/reports/junit-report.xml'
+                    // archiveArtifacts 'reports/*'
+                    sh """trcli -y -c "Test_cases/trcli-config.yml" parse_robot -f reports/output.xml
+                          """
+                    
+                }
+            }
+               
+        }
+        stage('check test status'){
+            steps{
+              script {
+                    // Mark build as unstable if the previous stage fails
+                    if (currentBuild.result == 'UNSTABLE') {
+                        error 'Stopping the pipeline because the build is unstable.'
+                    }
+                }
+         
+            }
+        }   
+       
+        
+        stage('deploy'){
+            steps{
+                echo 'hello world3'
+            }
+        }
+    
+     
+    }
+    
+}
