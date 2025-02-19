@@ -20,7 +20,7 @@ pipeline {
                     
                     // junit '**/reports/junit-report.xml'
                     // archiveArtifacts 'reports/*'
-                    sh """trcli -y -c "trcli-config.yml" parse_robot -f "reports/output.xml"
+                    sh """trcli -y -c "trcli-config.yml" parse_robot -f reports/output.xml
                           """
                     
                 }
