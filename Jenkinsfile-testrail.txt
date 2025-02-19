@@ -12,7 +12,7 @@ pipeline {
                 
                 script {
                     // Run a batch file
-                   sh """pabot --processes 4 -d reports "/Test_cases/Login_chrome.robot" 
+                   sh """pabot --processes 4 -d reports "\\Test_cases\\Login_chrome.robot" 
                    """
                 }
             }
