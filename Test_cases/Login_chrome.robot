@@ -4,7 +4,7 @@ Library        SeleniumLibrary
 Library        OperatingSystem
 Library        Collections
 Library        AllureLibrary
-Library        testrail
+Library        TestRail
 Variables    ../Data/Config.yml
 Variables    ../Elements/Login_Elements.yml
 Variables    ../Elements/Menu_Elements.yml
@@ -28,12 +28,10 @@ Verify that user with valid credentials can login to the    # TestRailID: C120
     Input Password                       ${password_field}    ${password}
     Take Screenshot And Report
     Click Button                         ${signIn_button}
-    Click Element                        ${accept_term}
+    Click Element                        ${accept_tderm}
     Click Button                         ${term_continue_btn}    
     Wait Until Element Is Visible        ${dashboard}
     Sleep    1s 
-   
-    Log    "TestRail Step Log: "sdsfasdsf""
     Take Screenshot And Report
 Verify that user with invalid credentials cannot login to the website
     [Documentation]    **Verify that user with invalid credentials cannot login to the website**
@@ -86,5 +84,8 @@ Verify that user must not be able to login into the website until required field
     Input Text                           ${username_field}    ${username}
     Click Button                         ${signIn_button}
     Sleep    1s 
-    Take Screenshot And Report
+
+
+*** Keywords ***
+
    
