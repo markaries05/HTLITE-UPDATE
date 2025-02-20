@@ -35,7 +35,12 @@ Login
     Wait Until Element Is Visible        ${dashboard}
 Access_digitized_signature
     Click Element                        ${settings_dropdown}
-    Click Element                        ${settings_digitized_sig} 
+    Click Element                        ${upload_dig_btn_page} 
+    Wait Until Element Is Visible        xpath://div[@class='wrapper wrapper-content animated fadeIn']
+
+Acess_change_pass
+    Click Element                        ${settings_dropdown}
+    Click Element                        ${change_pass_btn_page}
     Wait Until Element Is Visible        xpath://div[@class='wrapper wrapper-content animated fadeIn']
     
 Log out
@@ -47,9 +52,10 @@ Set TestRail Property
     [Arguments]    ${key}    ${value}
     Set Test Documentation    ${\n}- ${key}: ${value}    append=True
 Take Screenshot And Report
-    ${path} =    Capture Page Screenshot    filename=failure-{index}.png
+    ${path} =    Capture Page Screenshot    filename=Screenshot-{index}.png
     Set TestRail Property    testrail_attachment    ${path}
 
 Close Test Browser
     Run Keyword If    '${TEST_STATUS}' != 'PASS'    Take Screenshot And Report
     Close Browser
+   

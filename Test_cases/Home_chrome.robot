@@ -19,19 +19,19 @@ Test Teardown    Close All Browsers
 ${screenshot_path}
 *** Test Cases ***
 
-T57324
+Able to view the Featured Employee
     [Documentation]    **Able to view the Featured Employee**
     Login
     Wait Until Element Is Visible        ${featured_emp}    timeout=10
    ${screenshot_path}=                  Capture Page Screenshot    Test_cases/test_result/test_screens/chrome/Cfeature_employee.png
     Attach File                          ${screenshot_path}    Cfeature_employee.png    image/png
-T57325
+Able to view the Announcement and Events
     [Documentation]    **Able to view the Announcement and Events**
     Login
     Wait Until Element Is Visible        ${announcement}    timeout=10
     ${screenshot_path}=                 Capture Page Screenshot    Test_cases/test_result/test_screens/chrome/Cannouncement.png
     Attach File                          ${screenshot_path}    Cannouncement.png    image/png
-T57326
+Able to hide Announcement and Events using the drop-down button
     [Documentation]    **Able to hide Announcement and Events using the drop-down button**
     [Tags]    Unfinish
     Login
@@ -43,7 +43,7 @@ T57326
     ${screenshot_path}=                 Capture Page Screenshot    Test_cases/test_result/test_screens/chrome/Cannouncement_hide.png
     Attach File                          ${screenshot_path}    Cannouncement_hide.png    image/png
     
-T57327
+Able to click the navigation bar button
     [Documentation]    **Able to click the navigation bar button**
     Login
     ${screenshot_path}=                Capture Page Screenshot    Test_cases/test_result/test_screens/chrome/Fnav_bar.png
@@ -53,7 +53,7 @@ T57327
     Sleep    1s
     ${screenshot_path}=                Capture Page Screenshot    Test_cases/test_result/test_screens/chrome/Enav_ubar.png
     Attach File                         ${screenshot_path}    Enav_ubar.png    image/png
-T57336
+Able to hide 'My Leave Credits' using the drop-down button
     [Documentation]    **Able to hide 'My Leave Credits' using the drop-down button**
     Login
     Scroll Element Into View            ${scroll_down}         
@@ -65,7 +65,7 @@ T57336
     Sleep    1s
     ${screenshot_path}=                Capture Page Screenshot    Test_cases/test_result/test_screens/chrome/Cleave_cred.png
     Attach File                         ${screenshot_path}    Cleave_cred.png    image/png
-T57337
+Able to view the 'My Leave Credits' dashboard
     [Documentation]    **Able to view the 'My Leave Credits' dashboard**
     Login
     Scroll Element Into View            ${scroll_down}
@@ -73,7 +73,7 @@ T57337
     Sleep    1s
     ${screenshot_path}=                Capture Page Screenshot    Test_cases/test_result/test_screens/chrome/Cleave_hover.png
     Attach File                         ${screenshot_path}    Cleave_hover.png    image/png
-T57353
+Able to view 'My Pending Applications' tab
     [Documentation]    **Able to view 'My Pending Applications' tab**
     Login
     Wait Until Element Is Visible       ${pending_leave_app}
@@ -81,7 +81,7 @@ T57353
     Sleep    1s
     ${screenshot_path}=                Capture Page Screenshot    Test_cases/test_result/test_screens/chrome/Cpending_hover.png
     Attach File                         ${screenshot_path}    Cpending_hover.png    image/png
-T57354
+Able to hide 'My Pending Application' dashboard
     [Documentation]    **Able to hide 'My Pending Application' dashboard** 
     Login
     Wait Until Element Is Visible       ${my_pending_app_dropdown}
