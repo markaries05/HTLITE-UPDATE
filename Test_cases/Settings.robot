@@ -95,20 +95,20 @@ Able to search for Digitized Certificate
     Sleep    1s
     Click Button                         xpath://button[@id='search-button'][1]
     Take Screenshot And Report
-test
-    Login
-    Access_digitized_signature
-    Sleep    1s
-    #select index in dropdown
-    Select From List By Index    xpath://select[@id='BaseErEmployeeImageSignature_pageSize']    4
-    Sleep    5s
-test2
-    Login
-    Click Element                        ${settings_dropdown}
-    click Element    xpath://a[@href='/index.php?r=pmis/er/pki/getExpiredCerts']
-    Sleep    5s
-    Close Window
-    Sleep    3s
+# test
+#     Login
+#     Access_digitized_signature
+#     Sleep    1s
+#     #select index in dropdown
+#     Select From List By Index    xpath://select[@id='BaseErEmployeeImageSignature_pageSize']    4
+#     Sleep    5s
+# test2
+#     Login
+#     Click Element                        ${settings_dropdown}
+#     click Element    xpath://a[@href='/index.php?r=pmis/er/pki/getExpiredCerts']
+#     Sleep    5s
+#     Close Window
+#     Sleep    3s
 
 *** Keywords ***
 Delete signature

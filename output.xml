@@ -1,119 +1,165 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2 (Python 3.12.8 on win32)" generated="2025-02-20T14:52:35.726369" rpa="false" schemaversion="5">
-<suite id="s1" name="Settings" source="c:\project\pull-from-git\hrlite-testrail\Test_cases\Settings.robot">
-<test id="s1-t1" name="test2" line="105">
+<robot generator="Robot 7.2 (Python 3.12.8 on win32)" generated="2025-02-20T15:18:29.727076" rpa="false" schemaversion="5">
+<suite id="s1" name="HRLITE LOGIN CHROME" source="c:\project\pull-from-git\hrlite-testrail\Test_cases\Login_chrome.robot">
+<test id="s1-t1" name="Verify that user with valid credentials can login to the" line="24">
 <kw name="Launch Browser Chrome" owner="General_Controller" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-02-20T14:52:36.850899" level="INFO">Opening browser 'chrome' to base url 'https://hrlite-dost5.asti.dost.gov.ph/index.php?r=site/login'.</msg>
+<msg time="2025-02-20T15:18:30.667257" level="INFO">Opening browser 'chrome' to base url 'https://hrlite-dost5.asti.dost.gov.ph/index.php?r=site/login'.</msg>
 <arg>${url}</arg>
 <arg>${browser1}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-02-20T14:52:36.850899" elapsed="5.761784"/>
+<status status="PASS" start="2025-02-20T15:18:30.666256" elapsed="5.333859"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-02-20T14:52:42.613686" elapsed="0.033886"/>
+<status status="PASS" start="2025-02-20T15:18:36.000115" elapsed="0.028948"/>
 </kw>
 <kw name="Set Browser Implicit Wait" owner="SeleniumLibrary">
 <arg>10s</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" start="2025-02-20T14:52:42.648570" elapsed="0.002002"/>
+<status status="PASS" start="2025-02-20T15:18:36.029063" elapsed="0.001982"/>
 </kw>
-<status status="PASS" start="2025-02-20T14:52:36.849872" elapsed="5.800700"/>
+<status status="PASS" start="2025-02-20T15:18:30.666256" elapsed="5.364789"/>
 </kw>
-<kw name="Login" owner="General_Controller">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${username_field}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-02-20T14:52:42.651576" elapsed="0.036116"/>
+<status status="PASS" start="2025-02-20T15:18:36.031045" elapsed="0.062146"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-20T14:52:42.688857" level="INFO">Typing text 'aries' into text field 'xpath://input[@id='LoginForm_username']'.</msg>
+<msg time="2025-02-20T15:18:36.094189" level="INFO">Typing text 'aries' into text field 'xpath://input[@id='LoginForm_username']'.</msg>
 <arg>${username_field}</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-20T14:52:42.687692" elapsed="0.104397"/>
+<status status="PASS" start="2025-02-20T15:18:36.094189" elapsed="0.100661"/>
 </kw>
 <kw name="Input Password" owner="SeleniumLibrary">
-<msg time="2025-02-20T14:52:42.795091" level="INFO">Typing password into text field 'xpath://input[@id='LoginForm_password']'.</msg>
-<msg time="2025-02-20T14:52:42.838376" level="INFO">Temporally setting log level to: NONE</msg>
+<msg time="2025-02-20T15:18:36.196857" level="INFO">Typing password into text field 'xpath://input[@id='LoginForm_password']'.</msg>
+<msg time="2025-02-20T15:18:36.247400" level="INFO">Temporally setting log level to: NONE</msg>
 <arg>${password_field}</arg>
 <arg>${password}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-20T14:52:42.794103" elapsed="0.116749"/>
+<status status="PASS" start="2025-02-20T15:18:36.195853" elapsed="0.116756"/>
+</kw>
+<kw name="Take Screenshot And Report" owner="General_Controller">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-02-20T15:18:36.540605" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshot-4.png"&gt;&lt;img src="screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-02-20T15:18:36.541604" level="INFO">${path} = C:\project\pull-from-git\hrlite-testrail\screenshot-4.png</msg>
+<var>${path}</var>
+<arg>filename=screenshot-{index}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-02-20T15:18:36.314609" elapsed="0.226995"/>
+</kw>
+<kw name="Set TestRail Property" owner="General_Controller">
+<kw name="Set Test Documentation" owner="BuiltIn">
+<msg time="2025-02-20T15:18:36.542603" level="INFO">Set test documentation to:
+
+- testrail_attachment: C:\project\pull-from-git\hrlite-testrail\screenshot-4.png</msg>
+<arg>${\n}- ${key}: ${value}</arg>
+<arg>append=True</arg>
+<doc>Sets documentation for the current test case.</doc>
+<status status="PASS" start="2025-02-20T15:18:36.542603" elapsed="0.000998"/>
+</kw>
+<arg>testrail_attachment</arg>
+<arg>${path}</arg>
+<status status="PASS" start="2025-02-20T15:18:36.541604" elapsed="0.001997"/>
+</kw>
+<status status="PASS" start="2025-02-20T15:18:36.313608" elapsed="0.229993"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-02-20T14:52:42.911854" level="INFO">Clicking button 'xpath://button[@class='btn pull-right btn-primary btn-lg']'.</msg>
+<msg time="2025-02-20T15:18:36.544602" level="INFO">Clicking button 'xpath://button[@class='btn pull-right btn-primary btn-lg']'.</msg>
 <arg>${signIn_button}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-20T14:52:42.911854" elapsed="1.965487"/>
+<status status="PASS" start="2025-02-20T15:18:36.544602" elapsed="1.830171"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-20T14:52:44.878341" level="INFO">Clicking element 'xpath://input[@id='acceptTerms']'.</msg>
+<msg time="2025-02-20T15:18:38.376736" level="INFO">Clicking element 'xpath://input[@id='acceptTerms']'.</msg>
 <arg>${accept_term}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-20T14:52:44.877341" elapsed="0.088673"/>
+<status status="PASS" start="2025-02-20T15:18:38.375738" elapsed="0.084203"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-02-20T14:52:44.967014" level="INFO">Clicking button 'xpath://button[@id='continueBtn']'.</msg>
+<msg time="2025-02-20T15:18:38.461012" level="INFO">Clicking button 'xpath://button[@id='continueBtn']'.</msg>
 <arg>${term_continue_btn}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-20T14:52:44.967014" elapsed="0.103650"/>
+<status status="PASS" start="2025-02-20T15:18:38.461012" elapsed="0.083294"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${dashboard}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-02-20T14:52:45.070664" elapsed="0.043993"/>
-</kw>
-<status status="PASS" start="2025-02-20T14:52:42.651576" elapsed="2.463081"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-20T14:52:45.115630" level="INFO">Clicking element 'xpath://span[@class='text-muted text-xs block']'.</msg>
-<arg>${settings_dropdown}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-20T14:52:45.115630" elapsed="0.137199"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-20T14:52:45.254835" level="INFO">Clicking element 'xpath://a[@href='/index.php?r=pmis/er/pki/getExpiredCerts']'.</msg>
-<arg>xpath://a[@href='/index.php?r=pmis/er/pki/getExpiredCerts']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-20T14:52:45.253827" elapsed="0.147636"/>
+<status status="PASS" start="2025-02-20T15:18:38.545298" elapsed="0.019615"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-20T14:52:50.404926" level="INFO">Slept 5 seconds.</msg>
-<arg>5s</arg>
+<msg time="2025-02-20T15:18:39.568693" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-20T14:52:45.402755" elapsed="5.003194"/>
+<status status="PASS" start="2025-02-20T15:18:38.566916" elapsed="1.001777"/>
 </kw>
-<kw name="Close Window" owner="SeleniumLibrary">
-<doc>Closes currently opened and selected browser window/tab.</doc>
-<status status="PASS" start="2025-02-20T14:52:50.408952" elapsed="0.038652"/>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-02-20T15:18:39.572770" level="INFO">"TestRail Step Log: "sdsfasdsf""</msg>
+<arg>"TestRail Step Log: "sdsfasdsf""</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-02-20T15:18:39.571728" elapsed="0.002039"/>
 </kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-20T14:52:53.450933" level="INFO">Slept 3 seconds.</msg>
-<arg>3s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-20T14:52:50.449613" elapsed="3.001834"/>
+<kw name="Take Screenshot And Report" owner="General_Controller">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-02-20T15:18:39.769404" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshot-5.png"&gt;&lt;img src="screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-02-20T15:18:39.769404" level="INFO">${path} = C:\project\pull-from-git\hrlite-testrail\screenshot-5.png</msg>
+<var>${path}</var>
+<arg>filename=screenshot-{index}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-02-20T15:18:39.576723" elapsed="0.192681"/>
 </kw>
-<kw name="Close All Browsers" owner="SeleniumLibrary" type="TEARDOWN">
-<doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" start="2025-02-20T14:52:53.455471" elapsed="6.548697"/>
+<kw name="Set TestRail Property" owner="General_Controller">
+<kw name="Set Test Documentation" owner="BuiltIn">
+<msg time="2025-02-20T15:18:39.770349" level="INFO">Set test documentation to:
+
+- testrail_attachment: C:\project\pull-from-git\hrlite-testrail\screenshot-4.png 
+- testrail_attachment: C:\project\pull-from-git\hrlite-testrail\screenshot-5.png</msg>
+<arg>${\n}- ${key}: ${value}</arg>
+<arg>append=True</arg>
+<doc>Sets documentation for the current test case.</doc>
+<status status="PASS" start="2025-02-20T15:18:39.770349" elapsed="0.000999"/>
 </kw>
-<status status="PASS" start="2025-02-20T14:52:36.848874" elapsed="23.158291"/>
+<arg>testrail_attachment</arg>
+<arg>${path}</arg>
+<status status="PASS" start="2025-02-20T15:18:39.770349" elapsed="0.000999"/>
+</kw>
+<status status="PASS" start="2025-02-20T15:18:39.574772" elapsed="0.196576"/>
+</kw>
+<kw name="Close Test Browser" owner="General_Controller" type="TEARDOWN">
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${TEST_STATUS}' != 'PASS'</arg>
+<arg>Take Screenshot And Report</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2025-02-20T15:18:39.773348" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-02-20T15:18:39.773348" elapsed="3.537326"/>
+</kw>
+<status status="PASS" start="2025-02-20T15:18:39.772371" elapsed="3.538303"/>
+</kw>
+<doc>
+- testrail_attachment: C:\project\pull-from-git\hrlite-testrail\screenshot-4.png 
+- testrail_attachment: C:\project\pull-from-git\hrlite-testrail\screenshot-5.png</doc>
+<tag>TestRailID: C120</tag>
+<status status="PASS" start="2025-02-20T15:18:30.665256" elapsed="12.649282"/>
 </test>
-<status status="PASS" start="2025-02-20T14:52:35.741567" elapsed="24.266593"/>
+<status status="PASS" start="2025-02-20T15:18:29.741622" elapsed="13.579817"/>
 </suite>
 <statistics>
 <total>
 <stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
+<stat pass="1" fail="0" skip="0">TestRailID: C120</stat>
 </tag>
 <suite>
-<stat name="Settings" id="s1" pass="1" fail="0" skip="0">Settings</stat>
+<stat name="HRLITE LOGIN CHROME" id="s1" pass="1" fail="0" skip="0">HRLITE LOGIN CHROME</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2025-02-20T14:52:36.821319" level="WARN">Imported library 'testrail' contains no keywords.</msg>
+<msg time="2025-02-20T15:18:30.642706" level="WARN">Imported library 'testrail' contains no keywords.</msg>
 </errors>
 </robot>

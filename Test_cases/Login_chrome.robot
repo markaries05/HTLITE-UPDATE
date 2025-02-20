@@ -32,7 +32,8 @@ Verify that user with valid credentials can login to the    # TestRailID: C120
     Click Button                         ${term_continue_btn}    
     Wait Until Element Is Visible        ${dashboard}
     Sleep    1s 
-    Log    sheetttt
+   
+    Log    "TestRail Step Log: "sdsfasdsf""
     Take Screenshot And Report
 Verify that user with invalid credentials cannot login to the website
     [Documentation]    **Verify that user with invalid credentials cannot login to the website**
