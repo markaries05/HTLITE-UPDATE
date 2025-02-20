@@ -1,122 +1,119 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2 (Python 3.12.8 on win32)" generated="2025-02-20T12:18:28.428483" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2 (Python 3.12.8 on win32)" generated="2025-02-20T14:52:35.726369" rpa="false" schemaversion="5">
 <suite id="s1" name="Settings" source="c:\project\pull-from-git\hrlite-testrail\Test_cases\Settings.robot">
-<test id="s1-t1" name="Verify if the system is able to display the 'Change Password' page" line="58">
+<test id="s1-t1" name="test2" line="105">
 <kw name="Launch Browser Chrome" owner="General_Controller" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-02-20T12:18:30.970202" level="INFO">Opening browser 'chrome' to base url 'https://hrlite-dost5.asti.dost.gov.ph/index.php?r=site/login'.</msg>
+<msg time="2025-02-20T14:52:36.850899" level="INFO">Opening browser 'chrome' to base url 'https://hrlite-dost5.asti.dost.gov.ph/index.php?r=site/login'.</msg>
 <arg>${url}</arg>
 <arg>${browser1}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-02-20T12:18:30.970202" elapsed="7.458011"/>
+<status status="PASS" start="2025-02-20T14:52:36.850899" elapsed="5.761784"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-02-20T12:18:38.429212" elapsed="0.066794"/>
+<status status="PASS" start="2025-02-20T14:52:42.613686" elapsed="0.033886"/>
 </kw>
 <kw name="Set Browser Implicit Wait" owner="SeleniumLibrary">
 <arg>10s</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" start="2025-02-20T12:18:38.496006" elapsed="0.004775"/>
+<status status="PASS" start="2025-02-20T14:52:42.648570" elapsed="0.002002"/>
 </kw>
-<status status="PASS" start="2025-02-20T12:18:30.969202" elapsed="7.531579"/>
+<status status="PASS" start="2025-02-20T14:52:36.849872" elapsed="5.800700"/>
 </kw>
 <kw name="Login" owner="General_Controller">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${username_field}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-02-20T12:18:38.505254" elapsed="0.130890"/>
+<status status="PASS" start="2025-02-20T14:52:42.651576" elapsed="0.036116"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-20T12:18:38.641253" level="INFO">Typing text 'aries' into text field 'xpath://input[@id='LoginForm_username']'.</msg>
+<msg time="2025-02-20T14:52:42.688857" level="INFO">Typing text 'aries' into text field 'xpath://input[@id='LoginForm_username']'.</msg>
 <arg>${username_field}</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-20T12:18:38.638712" elapsed="0.509304"/>
+<status status="PASS" start="2025-02-20T14:52:42.687692" elapsed="0.104397"/>
 </kw>
 <kw name="Input Password" owner="SeleniumLibrary">
-<msg time="2025-02-20T12:18:39.151509" level="INFO">Typing password into text field 'xpath://input[@id='LoginForm_password']'.</msg>
-<msg time="2025-02-20T12:18:39.284892" level="INFO">Temporally setting log level to: NONE</msg>
+<msg time="2025-02-20T14:52:42.795091" level="INFO">Typing password into text field 'xpath://input[@id='LoginForm_password']'.</msg>
+<msg time="2025-02-20T14:52:42.838376" level="INFO">Temporally setting log level to: NONE</msg>
 <arg>${password_field}</arg>
 <arg>${password}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-20T12:18:39.149041" elapsed="0.284789"/>
+<status status="PASS" start="2025-02-20T14:52:42.794103" elapsed="0.116749"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-02-20T12:18:39.434841" level="INFO">Clicking button 'xpath://button[@class='btn pull-right btn-primary btn-lg']'.</msg>
+<msg time="2025-02-20T14:52:42.911854" level="INFO">Clicking button 'xpath://button[@class='btn pull-right btn-primary btn-lg']'.</msg>
 <arg>${signIn_button}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-20T12:18:39.434841" elapsed="3.616327"/>
+<status status="PASS" start="2025-02-20T14:52:42.911854" elapsed="1.965487"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-20T12:18:43.055555" level="INFO">Clicking element 'xpath://input[@id='acceptTerms']'.</msg>
+<msg time="2025-02-20T14:52:44.878341" level="INFO">Clicking element 'xpath://input[@id='acceptTerms']'.</msg>
 <arg>${accept_term}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-20T12:18:43.052371" elapsed="0.400205"/>
+<status status="PASS" start="2025-02-20T14:52:44.877341" elapsed="0.088673"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-02-20T12:18:43.454016" level="INFO">Clicking button 'xpath://button[@id='continueBtn']'.</msg>
+<msg time="2025-02-20T14:52:44.967014" level="INFO">Clicking button 'xpath://button[@id='continueBtn']'.</msg>
 <arg>${term_continue_btn}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-20T12:18:43.452576" elapsed="0.244997"/>
+<status status="PASS" start="2025-02-20T14:52:44.967014" elapsed="0.103650"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${dashboard}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-02-20T12:18:43.698868" elapsed="0.047971"/>
+<status status="PASS" start="2025-02-20T14:52:45.070664" elapsed="0.043993"/>
 </kw>
-<status status="PASS" start="2025-02-20T12:18:38.503250" elapsed="5.243589"/>
+<status status="PASS" start="2025-02-20T14:52:42.651576" elapsed="2.463081"/>
 </kw>
-<kw name="Acess_change_pass" owner="General_Controller">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-20T12:18:43.749348" level="INFO">Clicking element 'xpath://span[@class='text-muted text-xs block']'.</msg>
+<msg time="2025-02-20T14:52:45.115630" level="INFO">Clicking element 'xpath://span[@class='text-muted text-xs block']'.</msg>
 <arg>${settings_dropdown}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-20T12:18:43.749348" elapsed="0.212334"/>
+<status status="PASS" start="2025-02-20T14:52:45.115630" elapsed="0.137199"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-20T12:18:43.962725" level="INFO">Clicking element 'xpath//a[@href='/index.php?r=sys/user/changePassword&amp;id=80']'.</msg>
-<msg time="2025-02-20T12:18:54.240308" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2025-02-20T12:18:54.240308" level="FAIL">Element with locator 'xpath//a[@href='/index.php?r=sys/user/changePassword&amp;id=80']' not found.</msg>
-<arg>${change_pass_btn_page}</arg>
+<msg time="2025-02-20T14:52:45.254835" level="INFO">Clicking element 'xpath://a[@href='/index.php?r=pmis/er/pki/getExpiredCerts']'.</msg>
+<arg>xpath://a[@href='/index.php?r=pmis/er/pki/getExpiredCerts']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="FAIL" start="2025-02-20T12:18:43.961682" elapsed="10.313883">Element with locator 'xpath//a[@href='/index.php?r=sys/user/changePassword&amp;id=80']' not found.</status>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>xpath://div[@class='wrapper wrapper-content animated fadeIn']</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="NOT RUN" start="2025-02-20T12:18:54.276614" elapsed="0.000000"/>
-</kw>
-<status status="FAIL" start="2025-02-20T12:18:43.747841" elapsed="10.528773">Element with locator 'xpath//a[@href='/index.php?r=sys/user/changePassword&amp;id=80']' not found.</status>
+<status status="PASS" start="2025-02-20T14:52:45.253827" elapsed="0.147636"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<arg>1s</arg>
+<msg time="2025-02-20T14:52:50.404926" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" start="2025-02-20T12:18:54.279829" elapsed="0.000000"/>
+<status status="PASS" start="2025-02-20T14:52:45.402755" elapsed="5.003194"/>
 </kw>
-<kw name="Take Screenshot And Report" owner="General_Controller">
-<status status="NOT RUN" start="2025-02-20T12:18:54.279829" elapsed="0.001513"/>
+<kw name="Close Window" owner="SeleniumLibrary">
+<doc>Closes currently opened and selected browser window/tab.</doc>
+<status status="PASS" start="2025-02-20T14:52:50.408952" elapsed="0.038652"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-20T14:52:53.450933" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-20T14:52:50.449613" elapsed="3.001834"/>
 </kw>
 <kw name="Close All Browsers" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" start="2025-02-20T12:18:54.281342" elapsed="5.913445"/>
+<status status="PASS" start="2025-02-20T14:52:53.455471" elapsed="6.548697"/>
 </kw>
-<doc>Verify if the system is able to display the 'Change Password' page</doc>
-<status status="FAIL" start="2025-02-20T12:18:30.968200" elapsed="29.227586">Element with locator 'xpath//a[@href='/index.php?r=sys/user/changePassword&amp;id=80']' not found.</status>
+<status status="PASS" start="2025-02-20T14:52:36.848874" elapsed="23.158291"/>
 </test>
-<status status="FAIL" start="2025-02-20T12:18:28.456512" elapsed="31.740819"/>
+<status status="PASS" start="2025-02-20T14:52:35.741567" elapsed="24.266593"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Settings" id="s1" pass="0" fail="1" skip="0">Settings</stat>
+<stat name="Settings" id="s1" pass="1" fail="0" skip="0">Settings</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2025-02-20T12:18:30.890046" level="WARN">Imported library 'testrail' contains no keywords.</msg>
+<msg time="2025-02-20T14:52:36.821319" level="WARN">Imported library 'testrail' contains no keywords.</msg>
 </errors>
 </robot>

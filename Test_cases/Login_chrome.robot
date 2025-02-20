@@ -41,21 +41,29 @@ Verify that user with invalid credentials cannot login to the website
     Input Password                       ${password_field}    test
     Click Button                         ${signIn_button}
     Wait Until Element Is Visible        ${userPass_error}
+    Sleep    1s 
+    Take Screenshot And Report
 Verify that user must be able to hide/unhide password
     [Documentation]    **Verify that user must be able to hide/unhide password**
     Wait Until Element Is Visible        ${username_field}
     Input Text                           ${username_field}    ${username}
     Input Password                       ${password_field}    ${password}
+    Click Element                        ${unhide_toggle}
+    Sleep    1s
+    Take Screenshot And Report
     Click Element                        ${unhide_toggle}   
-    Click Element                        ${unhide_toggle}   
+    Sleep    1s
+    Take Screenshot And Report
     
 Verify that user must be able to logout from the website
     [Documentation]    **Verify that user must be able to logout from the website**
     Login
+    Take Screenshot And Report
     Wait Until Element Is Visible        ${logout_button}
     Click Element                        ${logout_button}
     Wait Until Element Is Visible        ${username_field}
     Sleep    1s
+    Take Screenshot And Report
 
 
 Verify that user must be able to reset his password
@@ -65,11 +73,16 @@ Verify that user must be able to reset his password
     Input Text                           ${username_field}    ${username}
     Click Element                        ${reset_btn}
     Wait Until Element Is Visible        ${reset_pass_mess} 
+    Take Screenshot And Report
 
 Verify that user must not be able to login into the website until required fields are filled in.
     [Documentation]    **Verify that user must not be able to login into the website until required fields are filled in.**
     Wait Until Element Is Visible        ${username_field}
     Click Button                         ${signIn_button}
+    Sleep    1s 
+    Take Screenshot And Report
     Input Text                           ${username_field}    ${username}
     Click Button                         ${signIn_button}
+    Sleep    1s 
+    Take Screenshot And Report
    
