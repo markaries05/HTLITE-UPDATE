@@ -1,0 +1,19 @@
+==============================================================================
+HRLITE LOGIN CHROME                                                           
+==============================================================================
+Verify that user with valid credentials can login to the website :... | PASS |
+------------------------------------------------------------------------------
+Verify that user with invalid credentials cannot login to the webs... | PASS |
+------------------------------------------------------------------------------
+Verify that user must be able to hide/unhide password :: **Verify ... | PASS |
+------------------------------------------------------------------------------
+Verify that user must be able to logout from the website :: **Veri... | PASS |
+------------------------------------------------------------------------------
+Verify that user must be able to reset his password :: **Verify th... | PASS |
+------------------------------------------------------------------------------
+Verify that user must not be able to login into the website until ... | PASS |
+------------------------------------------------------------------------------
+HRLITE LOGIN CHROME                                                   | PASS |
+6 tests, 6 passed, 0 failed
+==============================================================================
+Output:  C:\project\pull-from-git\hrlite-testrail\reports\pabot_results\0\output.xml
