@@ -52,7 +52,7 @@ Set TestRail Property
     [Arguments]    ${key}    ${value}
     Set Test Documentation    ${\n}- ${key}: ${value}    append=True
 Take Screenshot And Report
-    ${path} =    Capture Page Screenshot    filename=Screenshot-{index}.png
+    ${path} =    Capture Page Screenshot    filename=screenshot-{index}.png
     Set TestRail Property    testrail_attachment    ${path}
 
 Close Test Browser
