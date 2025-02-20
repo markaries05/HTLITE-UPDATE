@@ -21,8 +21,8 @@ ${screenshot_path}
 
 *** Test Cases ***
 
-Verify that user with valid credentials can login to the website
-    [Documentation]    **Verify that user with valid credentials can login to the website**
+Verify that user with valid credentials can login to the    # TestRailID: C120
+    [Tags]    TestRailID: C120
     Wait Until Element Is Visible        ${username_field}
     Input Text                           ${username_field}    ${username}
     Input Password                       ${password_field}    ${password}
